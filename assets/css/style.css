@@ -1,0 +1,46 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GERAIS */
+:root{
+    --primary-color: #182C61;
+    --secondary-color: #182C61;
+    --white-color: #ECF0F1;
+    --space: 3rem;
+}
+
+.main-content{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem var(--space);
+    
+}
+
+/* CABEÇALHO */
+.cabecalho{
+    padding: 1rem 0;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.cabecalho .menu-navegation li{
+    display: inline;
+    margin-left: 1rem;
+}
+
+.menu-navegation li a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}

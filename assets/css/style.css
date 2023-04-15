@@ -163,6 +163,12 @@ h1{
     font-family: 'Roboto', sans-serif;
 }
 
+.items-flex form input:focus,
+.items-flex form textarea:focus{
+    font-family: 'Roboto', sans-serif;
+    outline: .06rem solid var(--primary-color);
+}
+
 .contact-us h3{
     font-size: 1.3rem;
     font-weight: normal;

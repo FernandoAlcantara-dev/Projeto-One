@@ -10,6 +10,7 @@
 /* GERAIS */
 :root{
     --primary-color: #182C61;
+    --animate-color: #DC143C;
     --white-color: #ECF0F1;
     --space: 2rem;
 }
@@ -44,9 +45,13 @@ h1{
 
 /* CABEÇALHO */
 .cabecalho{
-    padding: 1rem 0;
+    padding: 0;
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+
+.cabecalho .main-content{
+    padding: 0rem var(--space);
 }
 
 .cabecalho .menu-navegation li{
@@ -60,6 +65,10 @@ h1{
     font-size: 1.5rem;
 }
 
+.menu-navegation li a:hover{
+    color: var(--animate-color);
+}
+
 .container-flex,
 .brands-list{
     display: flex;
@@ -68,7 +77,7 @@ h1{
     align-items: baseline;
 }
 
-/* SEÇÃO SOBRE */
+/* SEÇÕES */
 .sobre{
     display: flex;
     flex-direction: row;
@@ -90,7 +99,8 @@ h1{
 
 }
 
-.intro-content h2{
+.intro-content h2,
+.contact-us h2{
     font-size: 1.8rem;
     font-weight: normal;
 }
@@ -108,4 +118,77 @@ h1{
 
 .brand{
     height: 1.5rem;
+}
+
+
+.contact-us{
+    margin-top: var(--space);
+    margin-bottom: var(--space);
+}
+
+.contact-us .container-flex{
+    justify-content: space-between;
+    
+}
+
+.contact-us .social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style-type: none;
+
+}
+
+.social-links .social{
+    height: 2rem;
+}
+
+.items-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.items-flex form input,
+.items-flex form textarea,
+.items-flex form button{
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.items-flex form input,
+.items-flex form textarea{
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-us h3{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.contact-us form button{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+    font-size: 1rem;
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+    padding: 0;
+}
+
+.contact-us form button:hover{
+    background-color: var(--animate-color);
+}
+
+/* RODAPÉ */
+footer{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem;
+}
+
+footer p{
+    text-align: center;
 }
